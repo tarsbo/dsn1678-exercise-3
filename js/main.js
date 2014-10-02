@@ -1,9 +1,19 @@
+/* var means you're making a box. Salesdetailsleft is what the box is called.
+ .sales__detailsleft is inside the box
+*/
+
+var salesdetailsleft = $('.sales__detailsleft');
+
+var salesleft = $('.salesleft');
+
 var buttonClickHandler = function () {
-	var currentState = sales__details.attr('data-state');
+	var currentState = salesdetailsleft.attr('data-state');
 
 	if (currentState == 'active'){
-		sales__details.attr('data-state', 'inactive');
+		salesdetailsleft.attr('data-state', 'inactive');
 	} else {
-		sales__details.attr('data-state', 'active');
+		salesdetailsleft.attr('data-state', 'active');
 	}
 };
+
+salesleft.on('click', buttonClickHandler);
