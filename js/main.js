@@ -17,3 +17,20 @@ var buttonClickHandler = function () {
 };
 
 salesleft.on('click', buttonClickHandler);
+
+
+var salesdetailsright = $('.sales__detailsright');
+
+var salesright = $('.salesright');
+
+var buttonClickHandler = function () {
+	var currentState = salesdetailsright.attr('data-state');
+
+	if (currentState == 'active'){
+		salesdetailsright.attr('data-state', 'inactive');
+	} else {
+		salesdetailsright.attr('data-state', 'active');
+	}
+};
+
+salesright.on('click', buttonClickHandler);
