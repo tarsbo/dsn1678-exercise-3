@@ -45,7 +45,7 @@ body {
   text-align: center;
 }
 
-.sales-group {
+.sales-group{
   padding: 2em 0;
 
   text-align: center;
@@ -87,9 +87,13 @@ body {
   padding: 2em;
   position: absolute;
   width: 90%;
-
+  opacity: 0;
   background-color: #000;
   border-radius: 6px;
+}
+
+.sales__details [data-state="active"] {
+
 }
 
 .sales__details::before {
